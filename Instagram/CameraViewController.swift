@@ -8,6 +8,7 @@
 
 import UIKit
 import AlamofireImage
+import Parse
 
 class CameraViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
@@ -23,6 +24,22 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
     
 
     @IBAction func onClick_PostButton(_ sender: Any) {
+        let post = PFObject(className: "Posts")
+        post["caption"] = descriptionField.text!
+        post["author"] = PFUser.current()!
+        let imageData = imageView.image!.pngData()
+        let file = PFFileObject(data: imageData!)
+        post["image"] = file
+        
+        post.saveInBackground { (success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                self.descriptionField.text = ""
+                print("Saved!")
+            } else {
+                print("Error")
+            }
+        }
     }
 
     
