@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		08446602224298B9000C0A98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08446601224298B9000C0A98 /* AppDelegate.swift */; };
-		08446604224298B9000C0A98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08446603224298B9000C0A98 /* ViewController.swift */; };
 		08446607224298B9000C0A98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08446605224298B9000C0A98 /* Main.storyboard */; };
 		08446609224298BA000C0A98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08446608224298BA000C0A98 /* Assets.xcassets */; };
 		0844660C224298BA000C0A98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0844660A224298BA000C0A98 /* LaunchScreen.storyboard */; };
 		08446617224298BB000C0A98 /* InstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08446616224298BB000C0A98 /* InstagramTests.swift */; };
 		08446622224298BB000C0A98 /* InstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08446621224298BB000C0A98 /* InstagramUITests.swift */; };
+		087069632242A6C100786F9F /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087069622242A6C100786F9F /* LogInViewController.swift */; };
+		087069652242A6D000786F9F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087069642242A6D000786F9F /* FeedViewController.swift */; };
 		6B8AE890ADC38FAD31656028 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A32AB10BAEE2801810C714AB /* Pods_Instagram.framework */; };
 		8130D5632CCFAFA000519289 /* Pods_InstagramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA2D863DFB0223DA2C917989 /* Pods_InstagramUITests.framework */; };
 		B5AF9E251CBA496ED6CAB086 /* Pods_InstagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBABF1C4CBBB2BFAC62803E7 /* Pods_InstagramTests.framework */; };
@@ -40,7 +41,6 @@
 		0639AECCA17008F25041AA08 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 		084465FE224298B9000C0A98 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08446601224298B9000C0A98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		08446603224298B9000C0A98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		08446606224298B9000C0A98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08446608224298BA000C0A98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0844660B224298BA000C0A98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		0844661D224298BB000C0A98 /* InstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08446621224298BB000C0A98 /* InstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramUITests.swift; sourceTree = "<group>"; };
 		08446623224298BB000C0A98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		087069622242A6C100786F9F /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		087069642242A6D000786F9F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		323EC7A44F3BF43108DFA1DB /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		39DD5068A09050B244F59FE7 /* Pods-InstagramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramUITests.debug.xcconfig"; path = "Target Support Files/Pods-InstagramUITests/Pods-InstagramUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7FCA4C81BA6461B3B73C2736 /* Pods-InstagramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramTests.debug.xcconfig"; path = "Target Support Files/Pods-InstagramTests/Pods-InstagramTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -115,11 +117,12 @@
 			isa = PBXGroup;
 			children = (
 				08446601224298B9000C0A98 /* AppDelegate.swift */,
-				08446603224298B9000C0A98 /* ViewController.swift */,
 				08446605224298B9000C0A98 /* Main.storyboard */,
 				08446608224298BA000C0A98 /* Assets.xcassets */,
 				0844660A224298BA000C0A98 /* LaunchScreen.storyboard */,
 				0844660D224298BA000C0A98 /* Info.plist */,
+				087069622242A6C100786F9F /* LogInViewController.swift */,
+				087069642242A6D000786F9F /* FeedViewController.swift */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -162,7 +165,6 @@
 				39DD5068A09050B244F59FE7 /* Pods-InstagramUITests.debug.xcconfig */,
 				83C0E61C9B333E8F8E577437 /* Pods-InstagramUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -398,7 +400,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08446604224298B9000C0A98 /* ViewController.swift in Sources */,
+				087069632242A6C100786F9F /* LogInViewController.swift in Sources */,
+				087069652242A6D000786F9F /* FeedViewController.swift in Sources */,
 				08446602224298B9000C0A98 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
