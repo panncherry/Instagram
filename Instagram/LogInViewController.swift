@@ -35,7 +35,7 @@ class LogInViewController: UIViewController {
                // UserDefaults.standard.set(true, forKey: "loggedIn")
                 self.performSegue(withIdentifier: "logInSegue", sender: nil)
             } else {
-                print("Error \(error?.localizedDescription)")
+                print("Error \(String(describing: error?.localizedDescription))")
             }
         }
     }
@@ -51,7 +51,7 @@ class LogInViewController: UIViewController {
                 self.usernameField.text = ""
                 self.passwordField.text = ""
             } else {
-                print("Sign up error \(error?.localizedDescription)")
+                print("Sign up error \(String(describing: error?.localizedDescription))")
             }
         }
     }

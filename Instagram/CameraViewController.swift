@@ -10,7 +10,7 @@ import UIKit
 import AlamofireImage
 import Parse
 
-class CameraViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class CameraViewController: UIViewController, UIImagePickerControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
     
@@ -27,6 +27,7 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
         let post = PFObject(className: "Posts")
         post["caption"] = descriptionField.text!
         post["author"] = PFUser.current()!
+        
         let imageData = imageView.image!.pngData()
         let file = PFFileObject(data: imageData!)
         post["image"] = file
@@ -42,10 +43,9 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
         }
     }
 
-    
     @IBAction func onClick_CameraButton(_ sender: Any) {
         let picker = UIImagePickerController()
-        picker.delegate = self //Let me know when user is done taking photo. Call me back on a func that has the photo
+        picker.delegate = self as! UIImagePickerControllerDelegate & UINavigationControllerDelegate //Let me know when user is done taking photo. Call me back on a func that has the photo
         picker.allowsEditing = true
         
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
@@ -53,7 +53,6 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
         } else {
             picker.sourceType = .photoLibrary
         }
-        
         present(picker, animated: true, completion: nil) //when tapping on camera btn, show the libaray
     }
     
@@ -65,3 +64,4 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
         dismiss(animated: true, completion: nil)
     }
 }
+

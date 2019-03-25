@@ -32,12 +32,32 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let post = posts[indexPath.row]
         let user = post["author"] as! PFUser
         cell.usernameLabel.text = user.username
-        cell.descriptionLabel.text = post["caption"] as! String
+        cell.descriptionLabel.text = post["caption"] as? String
         let imageFile = post["image"] as! PFFileObject
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
         cell.photoView.af_setImage(withURL: url)
         return cell
+    }
+    
+    
+    //call this func when user tap the photo
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let post = posts[indexPath.row]
+        let comment = PFObject(className: "Comments")
+        comment["text"] = "This is a random comment."
+        comment["post"] = post
+        comment["author"] = PFUser.current()!
+        
+        post.add(comment, forKey: "comments")
+        
+        post.saveInBackground { (success, error) in
+            if success {
+                print("Comment saved.")
+            } else {
+                print("Error saving comment.")
+            }
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -54,7 +74,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
         }
     }
-    
     
     @IBAction func onClick_LogOutButton(_ sender: Any) {
         PFUser.logOut()
