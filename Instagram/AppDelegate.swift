@@ -24,6 +24,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://intense-tundra-65361.herokuapp.com/parse"
             })
         )
+        
+        if PFUser.current() != nil {
+            //load the storyboard you want to show. In this case, we are calling "Main.storyboard"
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            //create a viewcontroller (bluepring) and instantiate one of our viewcontroller
+            let FeedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
+            //now we have an instant of that navigation view controller
+            //there is only one per application, that display the screen one at a time.
+            //rootViewController is the one that is being displayed.
+            window?.rootViewController = FeedNavigationController
+        }
+        
     return true
     }
 

@@ -20,11 +20,11 @@ class LogInViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+   /* override func viewDidAppear(_ animated: Bool) {
         if UserDefaults.standard.bool(forKey: "loggedIn") == true {
                 self.performSegue(withIdentifier: "logInSegue", sender: nil)
         }
-    }
+    }*/
     
     @IBAction func onClicked_SignInButton(_ sender: Any) {
         let username = usernameField.text!
@@ -32,7 +32,7 @@ class LogInViewController: UIViewController {
         
         PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
             if user != nil {
-                UserDefaults.standard.set(true, forKey: "loggedIn")
+               // UserDefaults.standard.set(true, forKey: "loggedIn")
                 self.performSegue(withIdentifier: "logInSegue", sender: nil)
             } else {
                 print("Error \(error?.localizedDescription)")
