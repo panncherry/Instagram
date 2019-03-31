@@ -30,7 +30,7 @@ The following **required** functionality is completed:
 - [x] AlamofireImage
 - [x] Bolts
 - [x] CameraManager - create custom camera view that allows for incorporating camera functionality into any view. 
-- [x] MessageInputBar -  allows to configure and display a text view that appears above the keyboard, similar to Messages or Facebook or Slack. 
+- [x] MessageInputBar - allows to configure and display a text view that appears above the keyboard, similar to Facebook.
 
 
 ## Video Walkthrough
@@ -38,3 +38,7 @@ The following **required** functionality is completed:
 Here's a walkthrough of implemented user stories:
 
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## License
+
+Copyright [2019] [Pann Cherry]
