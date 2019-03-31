@@ -3,6 +3,19 @@
 An instagram-like app with a custom Parse backend that allows a user to post photos, comment and view a global photos feed with infinte scroll. 
 
 
+
+## Pods & Frameworks
+
+- [x] Swift
+- [x] Parse - a custom backend services
+- [x] Alamofire
+- [x] AlamofireImage
+- [x] Bolts
+- [x] CameraManager - create custom camera view that allows for incorporating camera functionality into any view. 
+- [x] MessageInputBar - allows to configure and display a text view that appears above the keyboard, similar to Facebook.
+
+
+
 ## User Stories
 
 The following **required** functionality is completed:
@@ -22,23 +35,13 @@ The following **required** functionality is completed:
 - [x] User can log out. 
 
 
-## Pods & Frameworks
-
-- [x] Swift
-- [x] Parse - a custom backend services
-- [x] Alamofire
-- [x] AlamofireImage
-- [x] Bolts
-- [x] CameraManager - create custom camera view that allows for incorporating camera functionality into any view. 
-- [x] MessageInputBar - allows to configure and display a text view that appears above the keyboard, similar to Facebook.
-
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+<img src='https://i.imgur.com/KbJvnWl.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />  <img src='https://i.imgur.com/UwN7Idd.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 ## License
