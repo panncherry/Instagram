@@ -29,8 +29,8 @@ The following **required** functionality is completed:
 - [x] Alamofire
 - [x] AlamofireImage
 - [x] Bolts
-- [x] CameraManager - to create custom camera view in your app. It allows for incorporating camera functionality into any view. 
-- [x] MessageInputBar -  a pod that allows to configure and display a text view that appears above the keyboard, similar to Messages or Facebook or Slack. 
+- [x] CameraManager - create custom camera view that allows for incorporating camera functionality into any view. 
+- [x] MessageInputBar -  allows to configure and display a text view that appears above the keyboard, similar to Messages or Facebook or Slack. 
 
 
 ## Video Walkthrough
