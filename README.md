@@ -1,23 +1,37 @@
-# Instagram - Part I
+# Instagram Clone
 
-This is an Instagram clone with a custom Parse backend that allows a user to post photos and view a global photos feed.
+An instagram-like app with a custom Parse backend that allows a user to post photos, comment and view a global photos feed with infinte scroll. 
 
-Time spent: **5** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
-- [x] User sees app icon in home screen and styled launch screen. (1pt)
-- [x] User can sign up to create a new account. (1pt)
-- [x] User can log in. (1pt)
-- [x] User can take a photo, add a caption, and post it to the server. (3pt)
-- [x] User can view the last 20 posts. (4pts)
+- [x] User sees app icon in home screen and styled launch screen. 
+- [x] User can sign up to create a new account. 
+- [x] User can log in.
+- [x] User can add a profile picture.
+- [x] User can take a photo, add a caption, and post it to the server. 
+- [x] User can view the last 20 posts by default.
+- [x] User can view comments on a post.
+- [x] User can add a new comment.
+- [x] Profile pictures are shown for posts and comments.
+- [x] User can pull to refresh. 
+- [x] In addition, user can load past tweets infinitely. 
+- [x] User stays logged in across restarts.
+- [x] User can log out. 
 
-The following **bonus** features are implemented:
 
-- [x] User can pull to refresh. (1pt)
-- [x] User can load past tweets infinitely. (2pts)
+## Pods & Frameworks
+
+- [x] Swift
+- [x] Parse - a custom backend services
+- [x] Alamofire
+- [x] AlamofireImage
+- [x] Bolts
+- [x] CameraManager - to create custom camera view in your app. It allows for incorporating camera functionality into any view. 
+- [x] MessageInputBar -  a pod that allows to configure and display a text view that appears above the keyboard, similar to Messages or Facebook or Slack. 
+
 
 ## Video Walkthrough
 
