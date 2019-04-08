@@ -1,18 +1,18 @@
 //
-//  CommentCell.swift
+//  PostCell.swift
 //  Instagram
 //
-//  Created by Pann Cherry on 3/25/19.
+//  Created by Pann Cherry on 3/20/19.
 //  Copyright © 2019 TechBloomer. All rights reserved.
 //
 
 import UIKit
 
-class CommentCell: UITableViewCell {
-
-    @IBOutlet weak var nameLabel: UILabel!
+class PostCell: UITableViewCell {
     
-    @IBOutlet weak var commentLabel: UILabel!
+    @IBOutlet weak var photoView: UIImageView!
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,7 +21,6 @@ class CommentCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
 

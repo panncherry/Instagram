@@ -123,11 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				08446601224298B9000C0A98 /* AppDelegate.swift */,
-				087069622242A6C100786F9F /* LogInViewController.swift */,
-				087069642242A6D000786F9F /* FeedViewController.swift */,
-				087069662242C07500786F9F /* CameraViewController.swift */,
-				087069682242D00400786F9F /* PostCell.swift */,
-				08FFB10622498600009E3EE2 /* CommentCell.swift */,
+				08D1DD4B225B148300D35AEE /* Views */,
+				08D1DD4C225B149000D35AEE /* View Controllers */,
 				08446605224298B9000C0A98 /* Main.storyboard */,
 				0844660A224298BA000C0A98 /* LaunchScreen.storyboard */,
 				08446608224298BA000C0A98 /* Assets.xcassets */,
@@ -152,6 +149,25 @@
 				08446623224298BB000C0A98 /* Info.plist */,
 			);
 			path = InstagramUITests;
+			sourceTree = "<group>";
+		};
+		08D1DD4B225B148300D35AEE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				087069682242D00400786F9F /* PostCell.swift */,
+				08FFB10622498600009E3EE2 /* CommentCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		08D1DD4C225B149000D35AEE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				087069622242A6C100786F9F /* LogInViewController.swift */,
+				087069642242A6D000786F9F /* FeedViewController.swift */,
+				087069662242C07500786F9F /* CameraViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		7920EDB74DFDDA15A5CED559 /* Frameworks */ = {
@@ -249,13 +265,16 @@
 				TargetAttributes = {
 					084465FD224298B9000C0A98 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					08446611224298BB000C0A98 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 084465FD224298B9000C0A98;
 					};
 					0844661C224298BB000C0A98 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 084465FD224298B9000C0A98;
 					};
 				};
@@ -601,7 +620,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = RnR.Instagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -620,7 +639,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = RnR.Instagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -641,7 +660,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = RnR.InstagramTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Instagram.app/Instagram";
 			};
@@ -663,7 +682,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = RnR.InstagramTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Instagram.app/Instagram";
 			};
@@ -684,7 +703,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = RnR.InstagramUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Instagram;
 			};
@@ -705,7 +724,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = RnR.InstagramUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Instagram;
 			};

@@ -16,23 +16,18 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-   /* override func viewDidAppear(_ animated: Bool) {
-        if UserDefaults.standard.bool(forKey: "loggedIn") == true {
-                self.performSegue(withIdentifier: "logInSegue", sender: nil)
-        }
-    }*/
-    
+    /*:
+     # Sign in
+     * Check user authentications upon sign in
+     */
     @IBAction func onClicked_SignInButton(_ sender: Any) {
         let username = usernameField.text!
         let password = passwordField.text!
         
         PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
             if user != nil {
-               // UserDefaults.standard.set(true, forKey: "loggedIn")
                 self.performSegue(withIdentifier: "logInSegue", sender: nil)
             } else {
                 print("Error \(String(describing: error?.localizedDescription))")
@@ -40,6 +35,11 @@ class LogInViewController: UIViewController {
         }
     }
     
+    
+    /*:
+     # Sign up
+     * Create new account
+     */
     @IBAction func onClicked_SignUpButton(_ sender: Any) {
         let user = PFUser()
         user.username = usernameField.text

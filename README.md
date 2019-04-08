@@ -22,12 +22,12 @@ The following **required** functionality is completed:
 
 - [x] User sees app icon in home screen and styled launch screen. 
 - [x] User can sign up to create a new account. 
-- [x] User can log in.
+- [x] User can log in with an email address
 - [x] User can add a profile picture.
 - [x] User can take a photo, add a caption, and post it to the server. 
 - [x] User can view the last 20 posts by default.
 - [x] User can view comments on a post.
-- [x] User can add a new comment.
+- [x] User can add a comment.
 - [x] Profile pictures are shown for posts and comments.
 - [x] User can pull to refresh. 
 - [x] In addition, user can load past tweets infinitely. 
